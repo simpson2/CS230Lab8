@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule ^retrieveID/([0-9]+)$ retrieve_by_id.php?ID=$1 [NC,L]
+RewriteRule ^retrieveName/([A-Za-z]+)$ retrieve_by_name.php?Name=$1 [NC,L]
+RewriteRule ^updateName$ update_name_by_id.php [NC,L]
+RewriteRule ^updateURL$ update_url_by_id.php [NC,L]
+RewriteRule ^updateDesc$ update_desc_by_id.php [NC,L]
+RewriteRule ^create$ create.php [NC,L]
+RewriteRule ^delete$ delete.php [NC,L]

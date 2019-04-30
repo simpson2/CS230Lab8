@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <title>ReadingList</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="c">
+            <form id="createEntry" method="POST" action="">
+                <fieldset>
+                    <legend>Insert new entry into ReadingList</legend>
+                    Name:<br>
+                    <input type="text" name="Name" id="cName"><br>
+                    URL:<br>
+                    <input type="text" name="URL" id="cUrl"><br>
+                    Description:<br>
+                    <input type="text" name="Description" id="cDesc"><br>
+                    <button type="submit">Create Entry</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="r">
+            <form id="searchByID" method="GET" action="">
+                <fieldset>
+                    <legend>Search ReadingList by ID:</legend>
+                    ID:<br>
+                    <input type="text" name="ID" id="rId">
+                    <button type="submit">Search</button><br>
+                </fieldset>
+            </form>
+            <form id="searchByName" method="GET" action="">
+                <fieldset>
+                    <legend>Search ReadingList by Name:</legend>
+                    Name:<br>
+                    <input type="text" name="Name" id="rName">
+                    <button type="submit">Search</button><br>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div id="t">
+            <p id="retrieveTable"></p>
+        </div>
+    </div>
+    <div class="container">
+        <div id="u1">
+            <form id="updateName" method="POST" action="">
+                <fieldset>
+                    <legend>Update Name of entry in ReadingList</legend>
+                    (Existing) ID:<br>
+                    <input type="text" name="ID" id="uId"><br>
+                    Name:<br>
+                    <input type="text" name="Name" id="uName"><br>
+                    <button type="submit">Update Name</button>
+                </fieldset>
+            </form>
+        </div>
+        <div id="u2">
+            <form id="updateURL" method="POST" action="">
+                <fieldset>
+                    <legend>Update URL of entry in ReadingList</legend>
+                    (Existing) ID:<br>
+                    <input type="text" name="ID" id="uId"><br>
+                    URL:<br>
+                    <input type="text" name="URL" id="uUrl"><br>
+                    <button type="submit">Update URL</button>
+                </fieldset>
+            </form>
+        </div>
+        <div id="u3">
+            <form id="updateDesc" method="POST" action="">
+                <fieldset>
+                    <legend>Update Description of entry in ReadingList</legend>
+                    (Existing) ID:<br>
+                    <input type="text" name="ID" id="uId"><br>
+                    Desc:<br>
+                    <input type="text" name="Description" id="uDesc"><br>
+                    <button type="submit">Update Desc</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div id="d">
+            <form id="deleteEntry" method="POST" action="">
+                <fieldset>
+                    <legend>Delete ReadingList entry by ID</legend>
+                    (Existing) ID:<br>
+                    <input type="text" name="ID" id="uId"><br>
+                    <button type="submit">Delete Entry</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
