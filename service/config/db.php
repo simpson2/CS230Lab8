@@ -1,5 +1,7 @@
 <?php
 //database configuration
+//USER 'READINGLIST' CREATED
+//WITH CRUD PERMISSIONS ONLY
 
 class Database {
 

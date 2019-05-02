@@ -22,7 +22,8 @@ CREATE TABLE `ReadingList` (
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-INSERT INTO `ReadingList` VALUES ('1','1990-04-13','Aurore','http://www.wyman.com/','Atque similique deserunt mollitia impedit odio aperiam. Non aut provident illum id. Facere enim et quasi inventore quo. Doloremque asperiores molestiae ut voluptatibus ullam quisquam non.'),
+INSERT INTO `ReadingList` VALUES 
+('1','1990-04-13','Aurore','http://www.wyman.com/','Atque similique deserunt mollitia impedit odio aperiam. Non aut provident illum id. Facere enim et quasi inventore quo. Doloremque asperiores molestiae ut voluptatibus ullam quisquam non.'),
 ('2','2017-05-14','Rene','http://www.halvorson.com/','Aut et consequatur magnam assumenda nam. Ipsum quo rerum repellat sapiente ad. At ratione alias nihil sint alias aut reprehenderit.'),
 ('3','1977-10-02','Eveline','http://kuhlman.org/','Voluptatibus sed aliquam soluta dicta asperiores. Consectetur quasi iste aliquid. Quaerat magnam quas exercitationem vel sit doloremque voluptatem.'),
 ('4','1974-06-14','Effie','http://www.friesen.org/','Eaque deleniti nobis illo dolor quas et assumenda. Aperiam eum rem ut autem labore deserunt. Harum sed dicta ea voluptas in dolores tempora.'),

@@ -20,11 +20,12 @@ $(document).ready(function () {
             type: "POST",
             url: "http://localhost/Lab8/service/ops/create",
             data: { input : json },
+            //dataType: "json",
             success: function (res) {
-                alert("201: "+JSON.stringify(res));
+                alert("201 : "+JSON.stringify(res));
             },
-            error: function (xhr, status, err) {
-                alert(xhr.status + ': ' + xhr.statusText);
+            error: function (res, status, err) {
+                alert(res.status + ' ' + err+ ' : ' + JSON.stringify(res.responseJSON));
             },
         });
     });
@@ -48,10 +49,10 @@ $(document).ready(function () {
             url: "http://localhost/Lab8/service/ops/updateName",
             data: { input : json },
             success: function(res) {
-                alert("200: "+JSON.stringify(res));
+                alert("200 : "+JSON.stringify(res));
             },
-            error: function(xhr, status, err) {
-                alert(xhr.status + " :" + xhr.statusText);
+            error: function(res, status, err) {
+                alert(res.status + ' ' + err+ ' : ' + JSON.stringify(res.responseJSON));
             }
         });
     });
@@ -75,10 +76,10 @@ $(document).ready(function () {
             url: "http://localhost/Lab8/service/ops/updateURL",
             data: { input : json },
             success: function(res) {
-                alert("200: "+JSON.stringify(res));
+                alert("200 : "+JSON.stringify(res));
             },
-            error: function(xhr, status, err) {
-                alert(xhr.status + " :" + xhr.statusText);
+            error: function(res, status, err) {
+                alert(res.status + ' ' + err+ ' : ' + JSON.stringify(res.responseJSON));
             }
         });
     });
@@ -102,10 +103,10 @@ $(document).ready(function () {
             url: "http://localhost/Lab8/service/ops/updateDesc",
             data: { input : json },
             success: function(res) {
-                alert("200: "+JSON.stringify(res));
+                alert("200 : "+JSON.stringify(res));
             },
-            error: function(xhr, status, err) {
-                alert(xhr.status + " :" + xhr.statusText);
+            error: function(res, status, err) {
+                alert(res.status + ' ' + err+ ' : ' + JSON.stringify(res.responseJSON));
             }
         });
     });
@@ -215,10 +216,10 @@ $(document).ready(function () {
             url: "http://localhost/Lab8/service/ops/delete",
             data: { input : json },
             success: function(res) {
-                alert("200: "+JSON.stringify(res));
+                alert("200 : "+JSON.stringify(res));
             },
-            error: function(xhr, status, err) {
-                alert(xhr.status + ": " + xhr.statusText);
+            error: function(res, status, err) {
+                alert(res.status + ' ' + err+ ' : ' + JSON.stringify(res.responseJSON));
             }
         });
     });
