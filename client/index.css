@@ -50,6 +50,17 @@ td {
     margin: auto;
 }
 
+footer{
+	padding: 0.25em;
+	margin: auto;
+    width: 20%;
+    font-size: 11px;
+}
+hr {
+	border: 1px dashed rgba(0, 0, 0, 0.6);
+	width: 50%;
+}
+
 td {
     padding: 10px;
 }
